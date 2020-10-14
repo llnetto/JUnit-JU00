@@ -13,7 +13,7 @@ public class TestJUnit0 {
     public void setUp() {
         value1 = 1;
         value2 = 3;
-        expected_result = 5;
+        expected_result = 4;
     }
 
     @Test
