@@ -6,14 +6,14 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestJUnit0 {
-    static int control=0;
+    static int status=0;
 
     int value1=0, value2=0;
     int expected_result=0, actual_result=0;
 
     @Before
     public void setUp() {
-        control = 1;
+        status = 1;
 
         value1 = 1;
         value2 = 3;
@@ -34,6 +34,6 @@ public class TestJUnit0 {
 
     @After
     public void tearDown() {
-        control = 0;
+        status = 0;
     }
 }
