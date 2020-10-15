@@ -6,11 +6,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestJUnit0 {
-    protected  int value1=0, value2=0;
+    static int control=0;
+
+    protected int value1=0, value2=0;
     protected int result=0, expected_result=0;
 
     @Before
     public void setUp() {
+        control = 1;
+
         value1 = 1;
         value2 = 3;
         expected_result = 4;
@@ -30,9 +34,6 @@ public class TestJUnit0 {
 
     @After
     public void tearDown() {
-        value1 = 0;
-        value2 = 0;
-        result = 0;
-        expected_result = 0;
+        control = 0;
     }
 }
